@@ -1,0 +1,13 @@
+@import "utils";
+
+.dashboard{
+    display: flex;
+    margin: 1rem;
+    box-shadow: $shadow;
+    border-radius: $rounded;
+    background-color: white;
+}
+
+.main__logo > img{
+    border-radius: $rounded;
+}

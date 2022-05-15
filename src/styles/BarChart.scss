@@ -1,0 +1,32 @@
+@import "utils";
+
+.chart{
+    position: relative;
+    background-color: white;
+    margin: 4.5rem auto;
+    width: 80%;
+    padding: 2rem;
+    border-radius: $rounded;
+    box-shadow: $shadow;
+}
+
+
+#change__data{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: $fontSize;
+    font-weight: $boldText;
+    cursor: pointer;
+    background-color: $btnPrimary;
+    border: none;
+    outline: none;
+    border-radius: $curvedBorder;
+    color: white;
+    transition: all 0.2s;
+}
+
+#change__data:active{
+    transform: scale(0.95);
+}
