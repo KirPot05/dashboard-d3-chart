@@ -101,7 +101,7 @@ function Register() {
                         value={phoneNum}
                         onChange={(e) => setPhoneNum(e.target.value)}
                     />
-                    {phoneNumError && <span className={styles.error}> Enter a valid contact number</span>}
+                    {phoneNumError && <span className={styles.error}> Enter a valid 10 digit contact number </span>}
                 </div>
 
                 <div id={styles.input__check}>
