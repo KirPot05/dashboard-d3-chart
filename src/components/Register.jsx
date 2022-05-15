@@ -40,7 +40,7 @@ function Register() {
             setPasswordError(false);
 
             localStorage.setItem('auth-success', true);
-
+            console.log(agree);
             navigate('/');
         }
         
@@ -104,18 +104,17 @@ function Register() {
                     {phoneNumError && <span className={styles.error}> Enter a valid 10 digit contact number </span>}
                 </div>
 
-                <div id={styles.input__check}>
-                    <label htmlFor="agree__TC"></label>
-                    <div className="check__container">
+                <div className={styles.input__check}>
+                    <label className={styles.check__container}>
                         <input 
                             type="checkbox" 
-                            name="agree__TC" 
-                            id="agree__TC" 
                             checked={agree}
                             onChange={() => setAgree(val => !val)} 
-                        /> I read and
-                        agree to all the Terms and Conditions
-                    </div>
+                        />
+                        <span className={styles.check__mark}></span>
+                        
+                    </label>
+                    <span className={styles.agree}> I have read and agree to all the Terms and Conditions </span>
                 </div>
 
                 <div id={styles.submit__btn}>

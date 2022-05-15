@@ -5,7 +5,7 @@ import styles from "../styles/Dashboard.module.scss";
 function Dashboard() {
   return (
     <div className={styles.dashboard}>
-        <div class={styles.main__logo}>
+        <div className={styles.main__logo}>
 			<img src={logo} alt="Main Logo" />
 		</div>
 
