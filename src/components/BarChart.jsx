@@ -1,6 +1,6 @@
 import { useD3 } from '../hooks/useD3';
 import * as d3 from 'd3';
-import "../styles/BarChart.scss";
+import styles from "../styles/BarChart.module.scss";
 import { useState } from 'react';
 
 function BarChart({ data }) {
@@ -84,7 +84,7 @@ function BarChart({ data }) {
 
     return (
 
-        <div className="chart">
+        <div className={styles.chart}>
 
             <svg
                 ref={ref}
@@ -100,7 +100,7 @@ function BarChart({ data }) {
                 <g className="y-axis" />
             </svg>
 
-            <button onClick={changeData} id="change__data">Change Data</button>
+            <button onClick={changeData} id={styles.change__data}>Change Data</button>
         </div>
     )
 }

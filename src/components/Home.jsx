@@ -46,9 +46,8 @@ function Home() {
 	  ]
 
 	return (
-		<div className="chart__container">
+		<div>
 			<BarChart data={data}/>	
-
 		</div>
 	);
 }

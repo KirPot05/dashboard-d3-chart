@@ -8,6 +8,8 @@
     background-color: white;
 }
 
-.main__logo > img{
-    border-radius: $rounded;
+.main__logo{  
+    img{
+        border-radius: $rounded;
+    }
 }

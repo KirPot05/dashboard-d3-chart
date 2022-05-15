@@ -25,8 +25,9 @@
     border-radius: $curvedBorder;
     color: white;
     transition: all 0.2s;
-}
 
-#change__data:active{
-    transform: scale(0.95);
+    &:active{
+        transform: scale(0.95);
+    }
 }
+    

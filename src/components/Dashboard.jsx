@@ -1,11 +1,11 @@
 import Register from './Register';
 import logo from "../logo.png";
-import "../styles/Dashboard.scss";
+import styles from "../styles/Dashboard.module.scss";
 
 function Dashboard() {
   return (
-    <div className='dashboard'>
-        <div class="main__logo">
+    <div className={styles.dashboard}>
+        <div class={styles.main__logo}>
 			<img src={logo} alt="Main Logo" />
 		</div>
 

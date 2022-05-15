@@ -1,0 +1,72 @@
+@import "utils";
+
+
+.register{
+    padding: 1rem 2.2rem;
+    box-shadow: $shadow;
+    flex: 1;
+    
+    .form__heading{
+        font-family: $headingFont;
+    }
+
+    .input__field, #submit__btn{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .input__field {
+        input {
+            padding: 0.7rem;
+            border-radius: $curvedBorder;
+            border: $inputBorder;
+            outline: none;
+        }
+
+        label{
+            color: gray;
+            font-family: $textFont;
+        }
+     
+    }
+
+    .form__heading, .input__field, #submit__btn{
+        margin: 1rem;
+    }
+
+    #input__check{
+        margin: 2rem 1rem;
+        font-weight: $boldText;
+    }
+
+    #submit__btn {
+        width: 55%;
+
+        button{
+            font-size: 16px;
+            padding: 0.8rem;
+            cursor: pointer;
+            background-color: $btnPrimary;
+            border: none;
+            outline: none;
+            border-radius: $curvedBorder;
+            color: white;
+            transition: all 0.2s;
+
+            &:active{
+                transform: scale(0.96);
+            }
+        }
+    }
+
+    .error{
+        color: red;
+        font-size: 13px;    
+    }
+    
+}
+
+
+
+

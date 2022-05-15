@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Register.scss";
+import styles from "../styles/Register.module.scss";
 import { useNavigate } from 'react-router-dom';
 
 function Register() {
@@ -47,11 +47,11 @@ function Register() {
     }
 
     return (
-        <div className="register">
-            <h1 className="form__heading">Create an account</h1>
+        <div className={styles.register}>
+            <h1 className={styles.form__heading}>Create an account</h1>
 
             <form onSubmit={handleSubmit}>
-                <div className="input__field">
+                <div className={styles.input__field}>
                     <label htmlFor="email">Your email address</label>
                     <input 
                         type="email" 
@@ -60,10 +60,10 @@ function Register() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                    {emailError && <span className="error"> Enter a valid email address</span>}
+                    {emailError && <span className={styles.error}> Enter a valid email address</span>}
                 </div>
 
-                <div className="input__field">
+                <div className={styles.input__field}>
                     <label htmlFor="email">Your password</label>
                     <input 
                         type="password" 
@@ -72,10 +72,10 @@ function Register() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    {passwordError && <span className="error"> Passwords don't match</span>}
+                    {passwordError && <span className={styles.error}> Passwords don't match</span>}
                 </div>
 
-                <div className="input__field">
+                <div className={styles.input__field}>
                     <label htmlFor="confirm_password">Confirm your password</label>
                     <input
                         type="password"
@@ -84,15 +84,15 @@ function Register() {
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
                     />
-                    {passwordError && <span className="error"> Passwords don't match</span>}
+                    {passwordError && <span className={styles.error}> Passwords don't match</span>}
                 </div>
 
-                <div className="input__field">
+                <div className={styles.input__field}>
                     <label htmlFor="email">Your name</label>
                     <input type="text" name="name" id="name" />
                 </div>
 
-                <div className="input__field">
+                <div className={styles.input__field}>
                     <label htmlFor="phone_num">Your phone number</label>
                     <input 
                         type="text" 
@@ -101,10 +101,10 @@ function Register() {
                         value={phoneNum}
                         onChange={(e) => setPhoneNum(e.target.value)}
                     />
-                    {phoneNumError && <span className="error"> Enter a valid contact number</span>}
+                    {phoneNumError && <span className={styles.error}> Enter a valid contact number</span>}
                 </div>
 
-                <div id="input__check">
+                <div id={styles.input__check}>
                     <label htmlFor="agree__TC"></label>
                     <div className="check__container">
                         <input 
@@ -118,7 +118,7 @@ function Register() {
                     </div>
                 </div>
 
-                <div id="submit__btn">
+                <div id={styles.submit__btn}>
                     <button type="submit">Create account</button>
                 </div>
 
